@@ -35,3 +35,12 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-29 10:18, in .
+
+**Me:** what is the syntax for else?
+
+**Tutor:**
+
+Refused, off topic.

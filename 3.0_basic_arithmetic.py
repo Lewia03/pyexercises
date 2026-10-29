@@ -24,10 +24,23 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: 
+# 1. In:
+#    - Number_1: First integer entered by the user.
+#    - Number_2: Second integer entered by the user.
+#
 # 2. Process:
+#    - Prompt the user to type two numbers and convert both string inputs into integers.
+#    - Print the two numbers to confirm input.
+#    - Compute the addition, subtraction (Number_2 - Number_1), multiplication, and division of the two numbers.
+#
 # 3. Out:
+#The value of Number_1 and Number_2.
+#The calculated sum, difference, product, and quotient.
+#
 # 4. What happens when the second number is zero, and why:
+#    - The program crashes with a ZeroDivisionError: division by zero.
+#    - Why: The script executes line by line. It successfully calculates the sum, difference, and product 
+#      because addition, subtraction, and multiplication by zero are valid math operations. 
 
 
 # Your code below
@@ -49,7 +62,10 @@ product = Number_1 * Number_2
 print("The product of two numbers is:", product)
 
 #division of two numbers
-division = Number_1 / Number_2
-print("The division of two numbers is:", division)
+if Number_2 != 0:
+    division = Number_1 / Number_2
+    print("The division of two numbers is:", division)
+else:
+    print("The second number is 0")
 
 
