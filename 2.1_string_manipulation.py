@@ -24,10 +24,30 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A sentence entered by the user (string).
+# 2. Process: The program prompts the user for input and applies four distinct Python string transformation methods to it.
+# 3. Out: Four modified versions of the input sentence printed to the console.
 # 4. My four transformations, and when each is useful:
+#    - strip(): Removes leading/trailing whitespace; useful for cleaning up user inputs before storing or processing.
+#    - upper(): Converts all characters to uppercase; useful for creating bold headlines or doing case-insensitive string comparisons.
+#    - title(): Capitalizes the first letter of each word; useful for formatting book titles, article headings, or user names.
+#    - swapcase(): Inverts the casing of all letters; useful for creating playful visual effects or toggling text modes.
 
 
 # Your code below
+
+# Ask the user for a sentence
+sentence = input("Please enter a sentence: ")
+
+# Apply four distinct transformations
+t1 = sentence.strip()
+t2 = sentence.upper()
+t3 = sentence.title()
+t4 = sentence.swapcase()
+
+# Display the transformations
+print("String Transformations")
+print("1. Strip:   ", t1)
+print("2. Upper:   ", t2)
+print("3. Title:   ", t3)
+print("4. Swapcase:", t4)

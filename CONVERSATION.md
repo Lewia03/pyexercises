@@ -144,3 +144,72 @@ while count < 3:   # TODO: change 3 to stop earlier or later
 ```
 
 Which built-in function adds 1 to the current value of count?
+
+---
+## 2026-10-29 18:58, in .
+
+**Me:** what is a variable?
+
+**Tutor:**
+
+A variable is a name that refers to a value you want to store and reuse in your code.
+
+```python
+# TODO: assign the string 'hello' to a variable named greeting
+greeting = # TODO
+print(greeting)
+```
+
+What function prints the value of a variable?
+
+---
+## 2026-10-29 19:00, in .
+
+**Me:** what does \n do?
+
+**Tutor:**
+
+It inserts a line break in a string.
+
+```python
+text = "Hello" + "\n" + "World"
+# TODO: print text and see two lines
+```
+
+What string method puts a newline after the text?
+
+---
+## 2026-10-29 19:17, in .
+
+**Me:** what does key do?
+
+**Tutor:**
+
+`key` is a parameter that tells a sorting or searching function how to compare items.
+
+```python
+# Sorting with a key
+data = [("apple", 3), ("banana", 1), ("cherry", 2)]
+sorted_data = sorted(data, key=lambda x: x[1])  # TODO: what does x[1] refer to here?
+```
+
+What function uses the `key` argument to sort by the second element of each tuple?
+
+---
+## 2026-10-29 19:21, in .
+
+**Me:** what is the syntax for if?
+
+**Tutor:**
+
+The syntax for an if statement in Python.
+
+```python
+if condition:
+    # do something
+```
+
+- `condition` is any expression that evaluates to `True` or `False`.
+- The indented block under `if` runs only if the condition is `True`.
+
+What keyword must come after the condition?

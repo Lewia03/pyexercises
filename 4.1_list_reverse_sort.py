@@ -25,10 +25,28 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A starting list of items (favorite movies or numbers).
+# 2. Process: Make temporary sorted/reversed versions of the list without changing the original.
+# 3. Out: The list shown in 4 different orders, plus the original list at the end to prove it wasn't changed.
 # 4. My four orders, and which ones modify the original:
+#    - sorted(list): Alphabetical (does NOT modify original)
+#    - sorted(list, reverse=True): Reverse alphabetical (does NOT modify original)
+#    - list(reversed(list)): Reversed original order (does NOT modify original)
+#    - sorted(list, key=len): By word length (does NOT modify original)
+#    * Note: None of these 4 modify the original list because methods like list.sort() or list.reverse() were avoided.
 
 
 # Your code below
+
+# Original list from Exercise 4.0
+movies = ["Inception", "Avatar", "Titanic", "Jaws", "Interstellar"]
+
+# Display in 4 different orders using copy/return methods
+print("1. Alphabetical:", sorted(movies))
+print("2. Reverse Alphabetical:", sorted(movies, reverse=True))
+print("3. Reversed original:", list(reversed(movies)))
+print("4. By word length:", sorted(movies, key=len))
+
+# Prove the original list has not been changed
+print("Proof - Original list is unchanged:")
+print(movies)

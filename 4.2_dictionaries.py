@@ -23,10 +23,13 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: User input for name, age, city, and country (and a fifth field like hobby).
+# 2. Process: Get input values, put them into a dictionary, access them, and pop one field out.
+# 3. Out: Printed statements showing the dictionary values, the popped field, and the remaining fields.
 # 4. My object, my five fields, and why those:
+#    - Object: A "person" profile dictionary.
+#    - Fields: "name", "age", "city", "country", "hobby".
+#    - Why: They are simple, standard personal details that make sense together in a basic profile.
 
 
 # Your code below

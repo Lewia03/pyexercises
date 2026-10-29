@@ -24,10 +24,26 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A number N from the user.
+# 2. Process: Loop from 1 to N and check if each number is divisible by 2.
+# 3. Out: Prints whether each number is odd or even.
 # 4. What happens on 0, on a negative number, on a very large number:
+#    - On 0: Tell the user it must be at least 1.
+#    - On negative: Tell the user to use a positive number.
+#    - On 5000: Stop it if it's over 100 so it doesn't flood the screen.
 
 
 # Your code below
+
+num = int(input("Enter a number: "))
+
+if num < 1:
+    print("Please enter a number 1 or higher.")
+elif num > 100:
+    print("Number is too big, pick 100 or less.")
+else:
+    for i in range(1, num + 1):
+        if i % 2 == 0:
+            print(i, "is even")
+        else:
+            print(i, "is odd")
