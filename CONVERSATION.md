@@ -126,3 +126,21 @@ for item in items:
 ```
 
 What is the variable `item` called in this loop?
+
+---
+## 2026-10-29 11:35, in .
+
+**Me:** what does while do?
+
+**Tutor:**
+
+A while loop runs a block of code as long as a condition is True.
+
+```python
+count = 0
+while count < 3:   # TODO: change 3 to stop earlier or later
+    print("tick")  # TODO: replace with your own action
+    count = count + 1
+```
+
+Which built-in function adds 1 to the current value of count?

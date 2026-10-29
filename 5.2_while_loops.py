@@ -28,10 +28,31 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My stop condition, my attempt limit, my summary:
+# 1. In: number of attempts
+# 2. Process:create 2 while loops one for the attempt number and the other for if you
+#want to continue and input yes or no
+# 3. Out: attempt number: 
+# do you want to continue
+# 4. My stop condition, my attempt limit, my summary:Stop condition: First loop stops 
+# when i reaches 5 (i < 5); second loop stops when answer equals "yes" or "no".
+#Attempt limit: Fixed at 5 total attempts in the counting loop.
+#Summary: The program counts through 5 attempt iterations and then blocks 
+#execution in a validation loop until the user explicitly inputs "yes" or "no".
 
 
 # Your code below
+i = 0
+while i < 5:
+    print ("attempt number: ", i + 1)
+    i = i + 1
+
+while True:
+    answer = input("Do you want to continue? (yes/no): ")
+    if answer.strip().lower() == "yes":
+        print("you chose to continue")
+        break
+    elif answer.strip().lower() == "no":
+        print("you chose not to continue")
+        break
+    else:
+        print("invalid input enter yes or no")
