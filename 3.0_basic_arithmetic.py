@@ -24,7 +24,7 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
+# 1. In: 
 # 2. Process:
 # 3. Out:
 # 4. What happens when the second number is zero, and why:
@@ -36,6 +36,20 @@ Number_2 = int(input("Enter number 2: "))
 print("The number 1 is: ", Number_1)
 print("The number 2 is: ", Number_2)
 
-# as=ddition of numbers
+# addition of numbers
 sum = Number_1 + Number_2 
 print("The sum of two numbers is:", sum)
+
+# difference of 2 number
+dif = Number_2 - Number_1 
+print("The difference of two numbers is:", dif)
+
+#product of two numbers
+product = Number_1 * Number_2
+print("The product of two numbers is:", product)
+
+#division of two numbers
+division = Number_1 / Number_2
+print("The division of two numbers is:", division)
+
+
