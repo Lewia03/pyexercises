@@ -26,3 +26,12 @@ What is the first argument of the `print()` function?
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-29 09:58, in .
+
+**Me:** how to input?
+
+**Tutor:**
+
+Refused, off topic.
