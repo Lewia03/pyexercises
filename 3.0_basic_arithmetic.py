@@ -25,22 +25,23 @@ DELIVERABLE
 """
 
 # 1. In:
-#    - Number_1: First integer entered by the user.
-#    - Number_2: Second integer entered by the user.
+# Number_1: First integer entered by the user.
+#Number_2: Second integer entered by the user.
 #
 # 2. Process:
-#    - Prompt the user to type two numbers and convert both string inputs into integers.
-#    - Print the two numbers to confirm input.
-#    - Compute the addition, subtraction (Number_2 - Number_1), multiplication, and division of the two numbers.
+#Prompt the user to type two numbers and convert both string inputs into integers.
+#Print the two numbers to confirm input.
+#Compute the addition, subtraction (Number_2 - Number_1), multiplication, and division of the two numbers.
 #
 # 3. Out:
 #The value of Number_1 and Number_2.
 #The calculated sum, difference, product, and quotient.
 #
 # 4. What happens when the second number is zero, and why:
-#    - The program crashes with a ZeroDivisionError: division by zero.
-#    - Why: The script executes line by line. It successfully calculates the sum, difference, and product 
-#      because addition, subtraction, and multiplication by zero are valid math operations. 
+#The program crashes with an Error: division by zero.
+# Why: The script executes line by line. It successfully calculates the sum, difference, and product 
+# because addition, subtraction, and multiplication by zero are valid math operations. 
+#Fix is to put an if 
 
 
 # Your code below
