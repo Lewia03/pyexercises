@@ -30,3 +30,27 @@ DELIVERABLE
 
 
 # Your code below
+name = input("enter your name: ")
+age = input("enter your age: ")
+city = input("Enter your city: ")
+country = input("Enter your country: ")
+
+print ("my name is", name)
+print ("my age is", age)
+print ("my city is", city)
+print ("my country is", country)
+
+person = {
+    "name": name,
+    "age": age,
+    "city": city,
+    "country": country,
+}
+print("The person's name is: ", person["name"])
+print("The person's age is: ", person["age"])
+print("The person's city is: ", person["city"])
+print("The person's country is: ", person["country"])
+
+person_age = person.pop("age")
+print("The person's age was: ", person_age)
+print("the person's remaining fields are: ", person)

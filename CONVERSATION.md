@@ -75,3 +75,23 @@ print(toy_dict)  # prints {'apple': 1.2, 'cherry': 2.3}
 ```
 
 Which argument must you pass to pop to remove the key "banana"?
+
+---
+## 2026-10-29 11:12, in .
+
+**Me:** what is a dictionnary?
+
+**Tutor:**
+
+A dictionary is a Python container that stores pairs of keys and values.
+
+```python
+# Example: a small dictionary with toy data
+campaign = {
+    "name": "summer_sale",   # TODO: replace with your real key
+    "budget": 5000,          # TODO: replace with your real value
+    "ctr": 0.02
+}
+```
+
+What function returns the value associated with the key `"ctr"` in this dictionary?
