@@ -28,10 +28,11 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My message, and why:
+# 1. In: the string "Lewis"
+# 2. Process: printing my name followed by five other print statements 
+#that manually display the numbers 1 through 5 alongside my name.
+# 3. Out: my name once then my name numbered 5 times.
+# 4. My message, and why: "Lewis" because that is my name.
 
 
 # Your code below
