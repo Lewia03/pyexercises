@@ -26,39 +26,32 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My function name, and why return rather than print:
+# 1. In: a list of numbers goes in.
+# 2. Process: The function loops through the list and adds every number together to get a total.
+# 3. Out: the sum of numbers 
+# 4. My function name, and why return rather than print: my function name is compute_sum 
+# return instead of print so it isnt overwritten
 
 
 # Your code below
-def greet():
-    print("Hello World!")
+print("HEllo, World!")
 
+number_1 = 10
+number_2 = 20
 
-print("Hello World!")
+sum = number_1 + number_2
+print("The sum of", number_1, "and", number_2, "is", sum)
 
-greet()
-def greet_person(name):
-    """prints a greeting for the name it receives"""
-    print("Hello", name)
+number_3 = 100
+number_4 = 220
 
-greet_person("alice")
-greet_person("Lewis")
-def add(first, second):
-    return first + second
+sum = number_3 + number_4
+print("The sum of", number_3, "and", number_4, "is", sum)
 
-result = add(2,3)
-print("2 + 3 =", result)
-print("used directly", add(10, 5) * 2)
+def compute_sum(a, b):
+    return a + b
 
-print("-" * 30)
-
-def shout(text):
-    print(text.upper())
-
-value = shout("Hello")
-
-
-
+result1 = compute_sum(10, 20)
+result2 = compute_sum(100, 220)
+result3 = compute_sum(5, 15)
+print("The sums are:", result1, "and", result2, "and", result3)

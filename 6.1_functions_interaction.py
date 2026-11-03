@@ -29,9 +29,52 @@ DELIVERABLE
 """
 
 # 1. In:
+#    One number.
+
 # 2. Process, function by function:
+#- Function 1 (`is_zero`): Checks if the number is 0.
+#- Function 2 (`is_positive`): Checks if the number is above 0.
+#- Function 3 (`is_negative`): Checks if the number is below 0.
+#- Function 4 (`detailed_message`): Uses the 3 functions above to decide what text to send back.
+
 # 3. Out:
+#A message telling you what kind of number it is.
+
 # 4. The question my fourth function answers:
+#- Question: "Is this number zero, positive, or negative?"
+#- Why splitting helps: Testing small parts first makes it easy to find and fix mistakes.
 
 
 # Your code below
+def is_even(number):
+    """True when the number divides by two exactly."""
+    return number % 2 == 0
+
+def is_zero(number):
+    """True when the number is zero."""
+    return number == 0
+
+
+def is_positive(num):
+    return num > 0
+
+def is_negative(num):
+    return num < 0
+
+
+def detailed_message(num):
+    if is_zero(num):
+        return "The number is zero."
+    elif is_positive(num):
+        return "The number is positive."
+    elif is_negative(num):
+        return "The number is negative."
+    elif is_even(num):
+        return "The number is even."
+    else:
+        return "The number is odd."
+
+number = 6
+print(detailed_message(number))
+
+print(detailed_message(-4))
