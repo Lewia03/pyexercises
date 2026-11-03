@@ -36,16 +36,27 @@ DELIVERABLE
     This file, plus the output file your program produced.
 """
 
-# What is wrong with names.txt (found by reading it, not by guessing):
-# -
-# -
-# -
-# -
+# What is wrong with names.txt:
+# - Extra spaces
+# - Messy capitals
+# - Duplicate names
+# - Missing last names
 
 # 1. In:
-# 2. Process, problem by problem:
+#Messy names from names.txt.
+
+# 2. Process:
+#- Trim extra spaces.
+#- Fix capitalization.
+#- Remove duplicates.
+#- Skip lines with only 1 word.
+#- Sort by last name.
+
 # 3. Out:
+#A clean file called cleaned_names.txt.
+
 # 4. How I decide which word is the last name:
+#I split the line and take the last word using [-1].
 
 
 # Your code below
