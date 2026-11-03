@@ -1,38 +1,69 @@
-"""Exercise 7.0 — Collecting data and saving it
+"""
+Exercise 7.0 — Collecting data and saving it
 
-WHAT THE PROGRAM MUST DO
-    Ask the user for the information needed to record one entry, then save it to a CSV
-    file. Running the program twice must produce two entries, not overwrite the first.
+ANSWER THESE FIRST:
+1. What goes in?
+   User input from the terminal: student name, study subject, and study hours.
 
-ANSWER THESE FIRST, in comments at the top of your file
-    1. What goes in?
-    2. What happens to it?
-    3. What comes out?  (name your file, and list your columns)
-    4. Which columns did you choose, and what would you actually do with this file once
-       it has two hundred rows in it?
+2. What happens to it?
+   - The program asks the user for the details.
+   - It validates that study hours is a positive number.
+   - It checks if `study_log.csv` exists. If not, it creates it and writes the header line.
+   - It appends the new entry as a new line in `study_log.csv`.
 
-WHAT THE AI CANNOT KNOW
-    Your columns. They must be the ones you would really need to collect for a purpose
-    you can state. See 7.0_student_data.csv for the shape of a header line, not for
-    the columns to use.
+3. What comes out? (file name and columns)
+   - File name: `study_log.csv`
+   - Columns: `student_name,subject,hours_studied`
 
-    Two behaviours are yours to decide, and an assistant will guess them wrong:
-    what happens the very first time, when the file does not exist yet and needs its
-    header line, and what happens when a value the user typed is not acceptable.
-
-CHECK IT YOURSELF
-    Run your program three times with different values. Then open the file and count
-    the lines. You should have three entries and exactly one header line. If you have
-    three header lines, or one entry, your program is wrong.
-
-DELIVERABLE
-    This file, plus the CSV your program produced.
+4. Why these columns, and what this file is for:
+   - These columns record who studied what and for how long.
+   - Once the file has 200 rows, I could calculate the average study time per subject or see which student studied the most.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out, file name and columns:
-# 4. Why these columns, and what this file is for:
+import os
+import csv
+
+# File name
+filename = "study_log.csv"
+
+# --- 1. GET INPUT AND VALIDATE ---
+student_name = input("Enter student name: ").strip()
+while not student_name:
+    print("Name cannot be empty.")
+    student_name = input("Enter student name: ").strip()
+
+subject = input("Enter subject name: ").strip()
+while not subject:
+    print("Subject cannot be empty.")
+    subject = input("Enter subject name: ").strip()
+
+# check that hours is a valid positive number
+hours_input = input("Enter hours studied: ").strip()
+while True:
+    try:
+        hours_studied = float(hours_input)
+        if hours_studied > 0:
+            break
+        else:
+            print("Hours must be greater than 0.")
+    except ValueError:
+        print("Please enter a valid number for hours.")
+    hours_input = input("Enter hours studied: ").strip()
 
 
-# Your code below
+# checking if the file exists or not
+file_exists = os.path.exists(filename)
+
+
+# add it to csv file
+with open(filename, mode="a", newline="", encoding="utf-8") as file:
+    writer = csv.writer(file)
+    
+    # add header if it is new file
+    if not file_exists:
+        writer.writerow(["student_name", "subject", "hours_studied"])
+    
+    # the data that will be added to the row
+    writer.writerow([student_name, subject, hours_studied])
+
+print(f"Success! Entry saved to {filename}")

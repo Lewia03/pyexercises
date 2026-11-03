@@ -49,3 +49,44 @@ DELIVERABLE
 
 
 # Your code below
+input_filename = "names.txt"
+output_filename = "cleaned_names.txt"
+
+clean_names = []
+
+# --- 1. LOAD AND CLEAN DATA ---
+with open(input_filename, mode="r", encoding="utf-8") as file:
+    for line in file:
+        # Strip leading/trailing whitespaces and newlines
+        cleaned_line = line.strip()
+        
+        # Problem 1: Skip blank lines
+        if not cleaned_line:
+            continue
+        
+        # Problem 3: Standardize internal spacing by splitting words and re-joining
+        words = cleaned_line.split()
+        
+        # Skip invalid lines that don't have both first and last name
+        if len(words) < 2:
+            continue
+            
+        # Problem 2: Convert to Title Case (e.g., "john" -> "John")
+        formatted_name = " ".join(word.capitalize() for word in words)
+        
+        # Problem 4: Avoid duplicates
+        if formatted_name not in clean_names:
+            clean_names.append(formatted_name)
+
+
+# to sort by last name
+# name.split()[-1] picks the last word (the last name) to sort by
+clean_names.sort(key=lambda name: name.split()[-1].lower())
+
+
+# The new output file 
+with open(output_filename, mode="w", encoding="utf-8") as file:
+    for name in clean_names:
+        file.write(name + "\n")
+
+print(f"Done! Cleaned and sorted {len(clean_names)} names into '{output_filename}'.")
