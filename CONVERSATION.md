@@ -213,3 +213,21 @@ if condition:
 - The indented block under `if` runs only if the condition is `True`.
 
 What keyword must come after the condition?
+
+---
+## 2026-11-03 12:34, in .
+
+**Me:** What is my error?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-03 12:46, in .
+
+**Me:** how do i import another file from my codespace?
+
+**Tutor:**
+
+Refused, off topic.
