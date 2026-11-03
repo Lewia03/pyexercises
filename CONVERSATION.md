@@ -231,3 +231,75 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-03 14:56, in .
+
+**Me:** what is a tuple?
+
+**Tutor:**
+
+A tuple is an immutable ordered collection of items in Python.
+
+```python
+# Example: a tuple of campaign metrics
+metrics = ("CTR", 0.025, "CPA", 12.50)  # TODO: replace with your real data
+
+# Access the third item
+third_item = metrics[2]  # TODO: what is the value at index 2?
+```
+
+Which built-in function returns the number of items in a tuple?
+
+---
+## 2026-11-03 14:57, in .
+
+**Me:** how to save to .csv?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-03 14:57, in .
+
+**Me:** what does return do?
+
+**Tutor:**
+
+A `return` statement sends a value back to the caller of a function and ends the function’s execution.
+
+```python
+def calculate_profit(cost, revenue):
+    # TODO: compute the profit here
+    return profit  # sends the value back to whoever called this function
+```
+
+What value does this function send back to the caller?
+
+---
+## 2026-11-03 14:57, in .
+
+**Me:** csv file?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-03 14:58, in .
+
+**Me:** how do i import?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-03 15:07, in .
+
+**Me:** can i to scenarios_A.csv automatically?
+
+**Tutor:**
+
+Refused, off topic.
